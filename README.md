@@ -9,7 +9,8 @@ Banco de dados deve ser criado um banco com o nome "busca-cep" com a collaction 
         <li>DB_DATABASE=busca-cep</li>
         <li>DB_USERNAME=root</li>
         <li>DB_PASSWORD=</li>
-    </ul><br>
+    </ul>
+Caso alguma informação não esteja igual a lista acima, deve-se alterar esses dados no arquivo ".env"<br><br>
 Após feito isso, deve-se executar o seguinte comando:<br>
 <ul>
         <li>PHP ARTISAN MIGRATE</li>
