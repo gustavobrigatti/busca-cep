@@ -16,4 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return redirect()->route('ceps.index');
 });
-Route::resource('/ceps', 'BuscaCepController');
+Route::get('/ceps', ['as' => 'ceps.index', 'uses' => 'BuscaCepController@index']);
+Route::post('/ceps/buscaCep', ['as' => 'ceps.buscaCep', 'uses' => 'BuscaCepController@buscaCep']);

@@ -14,17 +14,17 @@ class CreateEnderecosTable extends Migration
     public function up()
     {
         Schema::create('enderecos', function (Blueprint $table) {
-            $table->bigIncrements('id')->nullable(false);
-            $table->string('cep')->unique()->nullable(false);
-            $table->string('logradouro')->nullable(false);
-            $table->string('complemento')->nullable(false);
-            $table->string('bairro')->nullable(false);
-            $table->string('localidade')->nullable(false);
-            $table->char('uf', 2)->nullable(false);
-            $table->integer('ibge')->nullable(false);
-            $table->integer('gia')->nullable(false);
-            $table->integer('ddd')->nullable(false);
-            $table->integer('siafi')->nullable(false);
+            $table->bigIncrements('id');
+            $table->string('cep')->unique();
+            $table->string('logradouro');
+            $table->string('complemento');
+            $table->string('bairro');
+            $table->string('localidade');
+            $table->char('uf', 2);
+            $table->string('ibge');
+            $table->string('gia');
+            $table->string('ddd');
+            $table->string('siafi');
             $table->timestamps();
             $table->softDeletes();
         });

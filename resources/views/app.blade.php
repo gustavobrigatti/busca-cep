@@ -240,17 +240,7 @@
                 }
             });
         });
-        //
-        /*
-        $('.datepicker').datepicker({
-            autoclose: true,
-            format: 'dd/mm/yyyy',
-            language: 'pt-BR',
-            clearBtn: true
-        });
-        */
-        $('.mask-number').mask('0#');
-        $('.mask-currency').mask("#.##0,00", {reverse: true});
+        $('.mask-cep').mask('00000-000');
     });
     $('.custom-file-input').on('change', function() {
         let fileName = $(this).val().split('\\').pop();
